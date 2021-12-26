@@ -1,6 +1,3 @@
-https://henneggy.github.io/rsschool-cv/
-***
-
 Ekaterina Baranova
 ======
 ***
