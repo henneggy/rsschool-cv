@@ -1,3 +1,146 @@
-.NamePhoto {
-    background-color: blueviolet;
+
+.center {
+    margin: 20px auto;
+    max-width: 1024px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 40px 2px rgb(0 0 0 / 23%);
+}
+
+
+header {
+    width: 100%;
+    margin: auto;
+    padding:10px;
+}
+
+
+
+.navi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 800px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+}
+
+.btn {
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px; 
+    position: absolute;
+    text-decoration: none;
+}
+
+.item_link {
+    letter-spacing: 0;
+}
+
+.item_link:hover,
+.item_link:active {
+    letter-spacing: 5px;
+}
+
+.item_link:after,
+.item_link:before {
+    backface-visibility: hidden;
+    border: 1px solid rgb(255, 255, 255);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.item_link:hover:after,
+.item_link:hover:before {
+    backface-visibility: hidden;
+    border-color: rgb(158, 92, 84);
+    transition: width 350ms ease-in-out;
+    width: 70%;
+}
+
+.item_link:hover:before {
+    bottom: auto;
+    top: 0;
+    width: 70%;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+.name{
+    padding: 10px;
+    padding-left: 0;
+    padding-top: 60px;
+    padding-bottom: 0;
+    font-size: 30px;
+}
+
+.prof{
+    padding: 10px;
+    padding-left: 0;
+    padding-top: 0;
+    font-size: 20px;
+}
+
+.title {
+    font-size: 25px;
+    padding: 10px;
+    background-color: rgb(233, 210, 208);
+    max-width: 1024px;
+}
+
+
+
+.text {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+    padding: 10px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.container2 {
+    display: flex;
+    padding: 10px;
+    min-height: 100px;
+}
+
+.code {
+    display: flex;
+    font-size: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(158, 92, 84);
 }
