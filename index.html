@@ -5,47 +5,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 
+<div class="center">
     <!--Шапка-->
     <header class="header">
-        Header
+            <ul class="navi">
+                <li class="nav_item">
+                <a class="btn item_link" href="#AboutMe">About</a>
+                </li>
+
+                <li class="nav_item">
+                <a class="btn item_link" href="#CodeExample">Code</a>
+                </li>
+
+                <li class="nav_item">
+                <a class="btn item_link" href="#Skills">Skills</a>
+                </li>
+
+                <li class="nav_item">
+                <a class="btn item_link" href="#NameContacts">Contacts</a>
+                </li>
+            </ul>
     </header>
     <!--Конец шапки-->
 
 
     <!--Main-->
     <main class="main">
-        <div class="NamePhoto">
-            <img src="/My-photo.jpg" alt="Мое фото">
-            Ekaterina Baranova
+
+        <div class="container">
+            <div class="Photo" style="flex-grow: 1;">
+                <div class="container1">
+                    <div class="photo"><img src="/My-photo.jpg" alt="Мое фото" width="400px" height="400px"></div>
+                </div>
+            </div>
+    
+            <div class="contact"id="NameContacts" style="flex-grow: 2;">
+                <ul> <div class="name">Ekaterina Baranova</div> 
+                    <div class="prof">Front-End Developer</div>
+                    <div class="title"> Contact info </div>
+                    <li class="text">Email: baranova.wmail@yandex.ru</li>
+                    <li class="text">Discord: Katerina (henneggy#8154)</li>
+                    <li class="text">GitHub: henneggy</li>
+                </ul> 
+            </div>
+        </div>
+        
+        <div class="container">
+        <div id="AboutMe">
+            <div> 
+                <div class="title">About Me</div>
+                <p class="text"> My goal is to become a front-end developer and possibly a mentor as far is it possible. I adapt relatively easy to new working environment. Also I don’t have problem with getting along with people.</p>
+            </div>
+        </div>
         </div>
 
-        <div class="Contacts">
-            Contact info
+        <div class="container">
+            <div id="Skills" style="flex-grow: 1;">
+                <p class="title">Skills</p>
+                <ul>
+                    <li class="text">HTML + CSS</li>
+                    <li class="text">JavaScript basics</li>
+                    <li class="text">Adobe Photoshop</li>
+                    <li class="text">English B2/Low Intermediate</li>
+                </ul>
+            </div>
+    
+            <div class="Education" style="flex-grow: 1;">
+                <p class="title">Education </p>
+                <ul>
+                    <li class="text">2020-2021 HTML Academy</li>
+                    <li class="text">2018-2021 Kuban State University, jouralism</li>
+                </ul>
+            </div>
         </div>
+        
+        <div class="container2">
+        <div id="CodeExample" style="flex-grow: 1;">
+            <div class="title">Code Example</div>
+            <pre>
+            <code class="code">
+                &lt!-- Photodiary --&gt
+                &ltdiv class="container"&gt
+                    &ltdiv class="blog"&gt
+                        &ltdiv class="column"&gt
+                            &ltdiv class="subtitle_blog"> PHOTODIARY &lt/div&gt
+                            &ltdiv class= "title"&gt American dream &lt/div&gt
+                            &ltdiv class="text"> Lorem ipsum dolor sit amet &lt/div&gt
+                        &lt/div&gt
 
-        <div class="AboutMe">
-            About Me
+                        &lt div class="column"&gt
+                            &lt div class="subtitle_blog"&gt PHOTODIARY &lt/div&gt
+                            &lt div class= "title"&gt A day exploring the Alps &lt/div&gt
+                            &lt div class="text"&gt Lorem ipsum dolor sit amet &lt/div&gt
+                        &lt /div&gt
+                    &lt /div>
+                &lt /div&gt
+                &lt!-- /Photography --&gt
+                </code>
+            </pre>
         </div>
-
-        <div class="SkillsEdu">
-            Skills+English, Education
-        </div>
-
-        <div class="CodeExample">
-            Code Example
         </div>
     </main>
     <!--Конец Main-->
 
 
     <!--Footer-->
-    <footer class="footer">
-        Footer
+    <footer>
+        <div class="footer">
+                <p> © 2021 by Ekaterina Baranova</p>
+                <a href="https://github.com/henneggy"> GitHub </a>
+                <a href="https://rs.school/js/"> RSSchool </a>
+        </div>
     </footer>
     <!--Конец Footer-->
+</div>
 </body>
 </html>
