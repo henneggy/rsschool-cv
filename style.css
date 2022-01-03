@@ -1,3 +1,155 @@
-.NamePhoto {
-    background-color: blueviolet;
+.center {
+    margin: 20px auto;
+    max-width: 1024px;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    background-color: white;
+
+    box-shadow: 10px 10px 40px 2px rgb(0 0 0 / 23%);
+}
+
+header {
+    width: 100%;
+    margin: auto;
+    padding:10px;
+}
+
+.navi {
+    max-width: 800px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+a {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    position: absolute;
+    background-color: transparent;
+    cursor: pointer;
+
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.item_link {
+    letter-spacing: 0;
+}
+
+.item_link:hover,
+.item_link:active {
+    letter-spacing: 5px;
+}
+
+.item_link:after,
+.item_link:before {
+    position: relative;
+    margin: 0 auto;
+
+    display: block;
+    transition: all 280ms ease-in-out;
+    width: 0;
+
+    content: " ";
+    border: 1px solid #ffffff;
+    bottom: 0px;
+    backface-visibility: hidden;
+}
+
+.item_link:hover:after,
+.item_link:hover:before {
+    width: 70%;
+
+    border-color: #9E5C54;
+
+    backface-visibility: hidden;
+    transition: width 350ms ease-in-out;
+}
+
+.item_link:hover:before {
+    top: 0;
+    width: 70%;
+    bottom: auto;
+}
+
+main {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+.name {
+    padding: 60px 10px 0 0;
+
+    font-size: 30px;
+}
+
+.prof {
+    padding: 0, 10px, 10px, 0;
+
+    font-size: 20px;
+}
+
+.title {
+    padding: 10px;
+    max-width: 1024px;
+
+    font-size: 25px;
+
+    background-color: #E9D2D0;
+}
+
+.text {
+    margin-left: 20px;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+}
+
+.container {
+    padding: 10px;
+
+    display: flex;
+}
+
+.container1 {
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container2 {
+    padding: 10px;
+    min-height: 100px;
+
+    display: flex;
+}
+
+.code {
+    display: flex;
+
+    font-size: 15px;
+}
+
+.footer {
+    padding: 10px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    background-color: #9E5C54;
 }
